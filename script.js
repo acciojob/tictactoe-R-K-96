@@ -86,7 +86,7 @@ function updateCell(cell, index){
 }
 function changePlayer(){
     currentPlayer = (currentPlayer == player1Name) ? player2Name : player1Name;
-    message.textContent = `${currentPlayer}'s turn`;
+    message.textContent = `${currentPlayer},you're up`;
 }
 function checkWinner(){
     let roundWon = false;
