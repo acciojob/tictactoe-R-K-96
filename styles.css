@@ -35,7 +35,7 @@
 }
 #game-container{
     margin-top: 10%;
-    font-family: "Permanent Marker", cursive;
+/*     font-family: "Permanent Marker", cursive; */
     text-align: center;
     display: none;
 }
