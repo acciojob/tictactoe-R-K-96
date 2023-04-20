@@ -107,7 +107,7 @@ function checkWinner(){
     }
 
     if(roundWon){
-        message.textContent = `${currentPlayer} wins!`;
+        message.textContent = `${currentPlayer} congratulations you won!`;
         running = false;
     }
     else if(!options.includes("")){
