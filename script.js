@@ -8,7 +8,7 @@ const player2 = document.getElementById("player2");
 const message = document.querySelector("#message");
 const error = document.getElementById("error");
 
-const startGame = document.getElementById("startGame");
+const startGame = document.getElementById("submit");
 const restartbtn = document.getElementById("restartBtn");
 
 const cells = document.querySelectorAll(".cell");
