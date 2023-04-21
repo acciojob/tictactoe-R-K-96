@@ -1,47 +1,73 @@
 /*  your css code here. If applicable */
-#input-container {
-    width: 100%;
-    height: 100%;
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-top: 40px;
+    text-align: center;
+}
+#input-cont {
+    margin: 30px 10px;
+    text-align: center;
+}
+#input-cont > label, #input-cont > input, #input-cont > button {
+    margin: 10px 5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 2px;
+}
+#input-cont > button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #2294ED;
+    color: white;
+    width: 250px;
+}
+#input-cont > input {
+    text-indent: 10px;
+}
+
+
+/* Grid-Container */
+#grid-cont {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 10px;
+}
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 350px;
+    height: 350px;
+    border: solid black 1.5px;
+}
+.game-grid > div {
+    border: solid black 1.5px;
+    background-color: #FFC0CB;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: inline-flex;
 }
-
-#error{
-    color: red;
-}
-.input-box{
-
-    max-width: 300px;
-    height: auto;
+.btn-cont {
     display: flex;
-    justify-content: space-around;
-    flex-flow: column wrap;
-    gap: 10px;
-    border: 1px solid gray;
-    padding: 10px;
-    
+    justify-content: flex-start;
+    gap: 100px;
 }
-
-.cell{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
+.btn-cont > button {
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2294ED;
+    color: white;
+    width: 100px;
 }
-#game-container{
-    margin-top: 10%;
-/*     font-family: "Permanent Marker", cursive; */
-    text-align: center;
-    display: none;
+.btn-cont button:first-child {
+    background-color: red;
 }
-#cellContainer{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 225px;
-    margin: auto;
+.btn-cont button:last-child {
+    background-color: rgb(37, 211, 37);
 }
